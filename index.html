@@ -135,14 +135,12 @@
 
         <main class="main">
             <h4 style="color:#f1406a; font-weight:400;font-family:'Oswald';">DESARROLLADOR WEB</h4>
-            <h1 style="width:600px;line-height:1;color:#f5e4e8;font-weight: 400;font-family: 'Oswald';">ELIAN CHAURAN</h1>
+            <h1 style="display:inline-block;line-height:1;color:#f5e4e8;font-weight: 400;font-family: 'Oswald';">ELIAN CHAURAN</h1>
          
             <img    
                 class="circlebg"
                 src="public/blurCircle.png" 
-                
-                width="650" 
-                height="650"/>
+/>
             <p  style="font-family:'Roboto';margin-top:16px;font-size:25px;font-weight:400;min-width:300px;max-width:600px;color:#8b797f;">Apasionado del desarrollo web. Construyo ideas y las plasmo en la web</p>
         
             <button class="btn" style="padding:0;margin-top:24px;align-self:start">
@@ -696,12 +694,6 @@
         stroke:black;
         translate: 0px -3px;
     }
-    .card:hover .circlebg{
-        border-radius: 0;
-        animation:none;
-        translate:-50% -50%;
-        opacity: 1;
-    }
 
     body{
         display: flex;
@@ -730,7 +722,13 @@
         width: 100%;
     }
     .circlebg{
-        position: absolute;right:0;top:50%;translate:0% -120%;z-index: -10;
+        position: absolute;
+        right:0;
+        width:650px;
+        height:650px;
+        top:50%;
+        translate:-10% -135%;
+        z-index: -10;
     }
 
     *{
