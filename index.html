@@ -100,7 +100,7 @@
                                   
             </ul>
         </nav>
-        <aside class="sidenav">
+        <aside id="sidenav" class="hide">
             <ul style="list-style-type: none; padding: 24px;display: flex;flex-direction: column;align-items: end;">
                 <li>
                     <button class="nav-btn-close"style="background-color: transparent;border:none;cursor:pointer;">
@@ -141,7 +141,7 @@
                 class="circlebg"
                 src="public/blurCircle.png" 
 />
-            <p  style="font-family:'Roboto';margin-top:16px;font-size:25px;font-weight:400;min-width:300px;max-width:600px;color:#8b797f;">Construyendo ideas fantásticas en la web</p>
+            <p  style="font-family:'Roboto';margin-top:16px;font-size:25px;font-weight:400;min-width:250px;max-width:600px;color:#8b797f;">Construyendo ideas fantásticas en la web</p>
         
             <button class="btn" style="padding:0;margin-top:24px;align-self:start">
                 <a style="padding:8px 16px;align-items:inherit;display: inherit;gap:inherit;"download href="https://download939.mediafire.com/qzmb3wd5arggYup5GnoaS0LhCLxmM2265ZekD4PEOOXTnriZkGZ_moynK18l3fOgkvqID5EPV0snnFlAWn217AaE-yj735qJnn9IOGWpc5vWGPyZmng4z_qzwzuVSdH2E3rLALMdyevXhECZun5xgxa15z9B_WwP5cqIiwSvrrg/lfgln5bd2c9k82g/cv.pdf" target="_blank">
@@ -317,8 +317,8 @@
         <section id="aboutme-section">
             
             <h4 class="category">INFORMACIÓN DE INTERÉS</h4>
-            <ul class="academic-info" style="display: grid;gap:16px;grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); margin-top:16px;">
-                <li class="academic-info-element" style="flex-direction: row;" >
+            <ul class="academic-info" style="display: grid;gap:16px;grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); margin-top:16px;">
+                <li class="flex-box-column" >
                     <svg style="width:24px;height:24px;"  class="academic-info_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.11507 5.19043L6.4339 7.10337C6.63948 8.33689 7.22535 9.47535 8.10962 10.3596L9.75 12L9.36262 12.7747C9.14607 13.2079 9.23096 13.731 9.57336 14.0734L10.9205 15.4205C11.1315 15.6315 11.25 15.9176 11.25 16.216V17.3047C11.25 17.7308 11.4908 18.1204 11.8719 18.3109L12.0247 18.3874C12.4579 18.6039 12.981 18.519 13.3234 18.1766L14.0461 17.4539C15.161 16.339 15.952 14.9419 16.3344 13.4122C16.4357 13.0073 16.2962 12.5802 15.9756 12.313L14.6463 11.2053C14.3947 10.9956 14.0642 10.906 13.7411 10.9598L12.5711 11.1548C12.2127 11.2146 11.8475 11.0975 11.5906 10.8406L11.2955 10.5455C10.8562 10.1062 10.8562 9.39384 11.2955 8.9545L11.4266 8.82336C11.769 8.48095 12.2921 8.39607 12.7253 8.61263L13.3292 8.91459C13.4415 8.97076 13.5654 9 13.691 9C14.2924 9 14.6835 8.3671 14.4146 7.82918L14.25 7.5L15.5057 6.66289C16.1573 6.22849 16.6842 5.63157 17.0344 4.93112L17.1803 4.63942M6.11507 5.19043C4.20716 6.84073 3 9.27939 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.95801 19.4908 6.26851 17.1803 4.63942M6.11507 5.19043C7.69292 3.82562 9.75004 3 12 3C13.9286 3 15.7155 3.6066 17.1803 4.63942"  stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -327,7 +327,7 @@
                         <small style="color:#8b797f">Venezuela, Anzoátegui</small>
                     </div>
                 </li>
-                <li class="academic-info-element"  style="flex-direction: row;">
+                <li class="flex-box-column"  >
     
                         <svg style="width:24px;height:24px;"  class="academic-info_svg" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"></path>
@@ -338,16 +338,25 @@
                             </div>
                     
                 </li>
-                <li style="flex-direction: row;"class="academic-info-element" >
+                <li class="flex-box-column" style="position: relative;">
                     
                     <svg  class="academic-info_svg" style="width:24px;height:24px;" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path>
                       </svg>
-                    <!-- <svg  width="16" height="16" class="academic-info_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M461.81 53.81a4.4 4.4 0 00-3.3-3.39c-54.38-13.3-180 34.09-248.13 102.17a294.9 294.9 0 00-33.09 39.08c-21-1.9-42-.3-59.88 7.5-50.49 22.2-65.18 80.18-69.28 105.07a9 9 0 009.8 10.4l81.07-8.9a180.29 180.29 0 001.1 18.3 18.15 18.15 0 005.3 11.09l31.39 31.39a18.15 18.15 0 0011.1 5.3 179.91 179.91 0 0018.19 1.1l-8.89 81a9 9 0 0010.39 9.79c24.9-4 83-18.69 105.07-69.17 7.8-17.9 9.4-38.79 7.6-59.69a293.91 293.91 0 0039.19-33.09c68.38-68 115.47-190.86 102.37-247.95zM298.66 213.67a42.7 42.7 0 1160.38 0 42.65 42.65 0 01-60.38 0z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M109.64 352a45.06 45.06 0 00-26.35 12.84C65.67 382.52 64 448 64 448s65.52-1.67 83.15-19.31A44.73 44.73 0 00160 402.32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg> -->
-                    <div style="position: relative;">
-                        <p>Educación</p><span style="font-size:11px;background-color:#d7b8bf;color: #1e1719;font-weight:500;padding:4px 8px;border-radius:32px;position: absolute;top:0;left:80px;">Aún cursando</span>
+                      <div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <p>Educación</p>
+                            <span style="white-space:nowrap;font-size:11px;background-color:#d7b8bf;color: #1e1719;font-weight:500;padding:4px 8px;border-radius:32px;">Aún cursando</span>
+                        </div>
+                        
                         <small style="color:#8b797f">Técnico de Grado Superior en Informática </small>
-                    </div>
+                </div>
+
+                    <!-- <svg  width="16" height="16" class="academic-info_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M461.81 53.81a4.4 4.4 0 00-3.3-3.39c-54.38-13.3-180 34.09-248.13 102.17a294.9 294.9 0 00-33.09 39.08c-21-1.9-42-.3-59.88 7.5-50.49 22.2-65.18 80.18-69.28 105.07a9 9 0 009.8 10.4l81.07-8.9a180.29 180.29 0 001.1 18.3 18.15 18.15 0 005.3 11.09l31.39 31.39a18.15 18.15 0 0011.1 5.3 179.91 179.91 0 0018.19 1.1l-8.89 81a9 9 0 0010.39 9.79c24.9-4 83-18.69 105.07-69.17 7.8-17.9 9.4-38.79 7.6-59.69a293.91 293.91 0 0039.19-33.09c68.38-68 115.47-190.86 102.37-247.95zM298.66 213.67a42.7 42.7 0 1160.38 0 42.65 42.65 0 01-60.38 0z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M109.64 352a45.06 45.06 0 00-26.35 12.84C65.67 382.52 64 448 64 448s65.52-1.67 83.15-19.31A44.73 44.73 0 00160 402.32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg> -->
+                    <!-- <div style="position: relative;"> -->
+
+                        
+                    <!-- </div> -->
                     
                     <!-- <p >Universidad Politécnica Territorial José Antonio Anzoátegui</p> -->
                 </li>
@@ -359,8 +368,8 @@
         <section id="aboutme-section">
             
             <h4 class="category">APTITUDES</h4>
-            <ul class="academic-info" style="display: grid;gap:16px;grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); margin-top:16px;">
-                <li style="align-items: center;"class="academic-info-element" >
+            <ul class="academic-info" style="display: grid;gap:16px;grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); margin-top:16px;">
+                <li style="align-items: center;"class="flex-box" >
                     <!-- <svg width="32" height="32" class="academic-info_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.11507 5.19043L6.4339 7.10337C6.63948 8.33689 7.22535 9.47535 8.10962 10.3596L9.75 12L9.36262 12.7747C9.14607 13.2079 9.23096 13.731 9.57336 14.0734L10.9205 15.4205C11.1315 15.6315 11.25 15.9176 11.25 16.216V17.3047C11.25 17.7308 11.4908 18.1204 11.8719 18.3109L12.0247 18.3874C12.4579 18.6039 12.981 18.519 13.3234 18.1766L14.0461 17.4539C15.161 16.339 15.952 14.9419 16.3344 13.4122C16.4357 13.0073 16.2962 12.5802 15.9756 12.313L14.6463 11.2053C14.3947 10.9956 14.0642 10.906 13.7411 10.9598L12.5711 11.1548C12.2127 11.2146 11.8475 11.0975 11.5906 10.8406L11.2955 10.5455C10.8562 10.1062 10.8562 9.39384 11.2955 8.9545L11.4266 8.82336C11.769 8.48095 12.2921 8.39607 12.7253 8.61263L13.3292 8.91459C13.4415 8.97076 13.5654 9 13.691 9C14.2924 9 14.6835 8.3671 14.4146 7.82918L14.25 7.5L15.5057 6.66289C16.1573 6.22849 16.6842 5.63157 17.0344 4.93112L17.1803 4.63942M6.11507 5.19043C4.20716 6.84073 3 9.27939 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.95801 19.4908 6.26851 17.1803 4.63942M6.11507 5.19043C7.69292 3.82562 9.75004 3 12 3C13.9286 3 15.7155 3.6066 17.1803 4.63942"  stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg> -->
@@ -369,7 +378,7 @@
                     <p>Responsable</p>
                     <p style="text-align:center;color:#8b797f">Me considero alguien altamente comprometido con su trabajo</p>
                 </li>
-                    <li class="academic-info-element" >
+                    <li style="align-items:center;"class="flex-box" >
                         <!-- <svg width="16" class="academic-info_svg" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.5 21L15.75 9.75L21 21M12 18H19.5M3 5.62136C4.96557 5.37626 6.96804 5.25 9 5.25M9 5.25C10.1208 5.25 11.2326 5.28841 12.3343 5.364M9 5.25V3M12.3343 5.364C11.1763 10.6578 7.68868 15.0801 3 17.5023M12.3343 5.364C13.2298 5.42545 14.1186 5.51146 15 5.62136M10.4113 14.1162C8.78554 12.4619 7.47704 10.4949 6.58432 8.31366" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg> -->
@@ -486,10 +495,10 @@
                             
                         
                         <p style="font-size: 16px;">Trabajo en equipo</p>
-                        <p style="color:#8b797f">Procuro relacionarme de manera sana y asertiva con mis compañeros</p>
+                        <p style="text-align:center; color:#8b797f">Procuro relacionarme de manera sana y asertiva con mis compañeros</p>
                     
                     </li>
-                    <li class="academic-info-element" >
+                    <li style="align-items:center;" class="flex-box" >
                   
 
                         <!-- <svg class="academic-info_svg-fill"  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 13 4 C 11.089844 4 9.542969 5.386719 9.15625 7.1875 C 6.824219 7.605469 5 9.550781 5 12 C 5 12.246094 5.027344 12.464844 5.0625 12.6875 C 4.417969 13.636719 4 14.753906 4 16 C 4 17.796875 4.894531 19.308594 6.15625 20.40625 C 6.066406 20.761719 6 21.117188 6 21.5 C 6 23.972656 8.027344 26 10.5 26 C 10.527344 26 10.539063 26 10.5625 26 C 11.144531 27.128906 12.152344 28 13.5 28 C 14.476563 28 15.363281 27.589844 16 26.9375 C 16.636719 27.589844 17.523438 28 18.5 28 C 19.847656 28 20.855469 27.128906 21.4375 26 C 21.460938 26 21.472656 26 21.5 26 C 23.847656 26 25.773438 24.171875 25.96875 21.875 L 26 21.875 C 26 21.8125 25.972656 21.75 25.96875 21.6875 C 25.972656 21.625 26 21.5625 26 21.5 C 26 21.128906 25.867188 20.8125 25.78125 20.46875 C 27.078125 19.367188 28 17.828125 28 16 C 28 14.753906 27.582031 13.636719 26.9375 12.6875 C 26.972656 12.464844 27 12.246094 27 12 C 27 9.550781 25.175781 7.605469 22.84375 7.1875 C 22.457031 5.386719 20.910156 4 19 4 C 17.800781 4 16.734375 4.558594 16 5.40625 C 15.265625 4.558594 14.199219 4 13 4 Z M 13 6 C 14.117188 6 15 6.882813 15 8 L 15 10 C 15 11.667969 13.667969 13 12 13 L 12 15 C 13.132813 15 14.160156 14.609375 15 13.96875 L 15 24.5 C 15 25.339844 14.339844 26 13.5 26 C 12.753906 26 12.15625 25.484375 12.03125 24.78125 L 11.84375 23.8125 L 10.875 23.96875 C 10.699219 23.996094 10.589844 24 10.5 24 C 9.109375 24 8 22.890625 8 21.5 C 8 21.191406 8.050781 20.902344 8.15625 20.625 C 8.164063 20.601563 8.179688 20.585938 8.1875 20.5625 C 8.496094 19.792969 9.167969 19.230469 10 19.0625 L 9.59375 17.09375 C 8.550781 17.304688 7.644531 17.859375 7 18.65625 C 6.371094 17.953125 6 17.023438 6 16 C 6 15.0625 6.320313 14.226563 6.875 13.53125 L 7.1875 13.15625 L 7.09375 12.65625 C 7.039063 12.421875 7 12.214844 7 12 C 7 10.332031 8.332031 9 10 9 L 11 9 L 11 8 C 11 6.882813 11.882813 6 13 6 Z M 19 6 C 20.117188 6 21 6.882813 21 8 L 21 9 L 22 9 C 23.667969 9 25 10.332031 25 12 C 25 12.214844 24.960938 12.421875 24.90625 12.65625 L 24.8125 13.15625 L 25.125 13.53125 C 25.679688 14.226563 26 15.0625 26 16 C 26 17.199219 25.488281 18.269531 24.65625 19 C 23.972656 18.394531 23.101563 18 22.125 18 C 21.179688 18 20.328125 18.335938 19.65625 18.90625 L 20.9375 20.4375 C 21.261719 20.164063 21.660156 20 22.125 20 C 23.089844 20 23.859375 20.722656 23.96875 21.65625 C 23.886719 22.972656 22.835938 24 21.5 24 C 21.410156 24 21.300781 23.996094 21.125 23.96875 L 20.15625 23.8125 L 19.96875 24.78125 C 19.84375 25.484375 19.246094 26 18.5 26 C 17.660156 26 17 25.339844 17 24.5 L 17 13.96875 C 17.839844 14.609375 18.867188 15 20 15 L 20 13 C 18.332031 13 17 11.667969 17 10 L 17 8 C 17 6.882813 17.882813 6 19 6 Z"/></svg> -->
@@ -539,11 +548,11 @@
                             
                         <!-- <svg  width="16" height="16" class="academic-info_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M461.81 53.81a4.4 4.4 0 00-3.3-3.39c-54.38-13.3-180 34.09-248.13 102.17a294.9 294.9 0 00-33.09 39.08c-21-1.9-42-.3-59.88 7.5-50.49 22.2-65.18 80.18-69.28 105.07a9 9 0 009.8 10.4l81.07-8.9a180.29 180.29 0 001.1 18.3 18.15 18.15 0 005.3 11.09l31.39 31.39a18.15 18.15 0 0011.1 5.3 179.91 179.91 0 0018.19 1.1l-8.89 81a9 9 0 0010.39 9.79c24.9-4 83-18.69 105.07-69.17 7.8-17.9 9.4-38.79 7.6-59.69a293.91 293.91 0 0039.19-33.09c68.38-68 115.47-190.86 102.37-247.95zM298.66 213.67a42.7 42.7 0 1160.38 0 42.65 42.65 0 01-60.38 0z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M109.64 352a45.06 45.06 0 00-26.35 12.84C65.67 382.52 64 448 64 448s65.52-1.67 83.15-19.31A44.73 44.73 0 00160 402.32" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg> -->
                         <p >Pensamiento lógico</p>
-                        <p style="color:#8b797f">Resuelvo problemas de elevada complejidad técnica </p>
+                        <p style="text-align:center;color:#8b797f">Resuelvo problemas de elevada complejidad técnica </p>
                         
                         <!-- <p >Universidad Politécnica Territorial José Antonio Anzoátegui</p> -->
                     </li>
-                <li class="academic-info-element" >
+                <li class="flex-box" >
                     <!-- <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path>
                     </svg> -->
@@ -559,7 +568,7 @@
                 
             
             
-                <li class="academic-info-element" >
+                <li class="flex-box" >
                     <svg width="16" class="academic-info_svg" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.53086 16.1224C9.08517 15.0243 8.00801 14.25 6.75 14.25C5.09315 14.25 3.75 15.5931 3.75 17.25C3.75 18.4926 2.74262 19.5 1.49998 19.5C1.44928 19.5 1.39898 19.4983 1.34912 19.495C2.12648 20.8428 3.58229 21.75 5.24998 21.75C7.72821 21.75 9.73854 19.7467 9.74993 17.2711C9.74998 17.2641 9.75 17.2571 9.75 17.25C9.75 16.8512 9.67217 16.4705 9.53086 16.1224ZM9.53086 16.1224C10.7252 15.7153 11.8612 15.1705 12.9175 14.5028M7.875 14.4769C8.2823 13.2797 8.8281 12.1411 9.49724 11.0825M12.9175 14.5028C14.798 13.3141 16.4259 11.7362 17.6806 9.85406L21.5566 4.04006C21.6827 3.85093 21.75 3.6287 21.75 3.40139C21.75 2.76549 21.2345 2.25 20.5986 2.25C20.3713 2.25 20.1491 2.31729 19.9599 2.44338L14.1459 6.31937C12.2638 7.57413 10.6859 9.20204 9.49724 11.0825M12.9175 14.5028C12.2396 12.9833 11.0167 11.7604 9.49724 11.0825"  stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>    
@@ -567,7 +576,7 @@
                     <p style="color:#8b797f">Poseo conocimientos de diseño de interfaces de usuario</p>
                     </li>
                     
-                    <li class="academic-info-element" >
+                    <li class="flex-box" >
                         <svg class="academic-info_svg" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.5 1.5H8.25C7.00736 1.5 6 2.50736 6 3.75V20.25C6 21.4926 7.00736 22.5 8.25 22.5H15.75C16.9926 22.5 18 21.4926 18 20.25V3.75C18 2.50736 16.9926 1.5 15.75 1.5H13.5M10.5 1.5V3H13.5V1.5M10.5 1.5H13.5M10.5 20.25H13.5"  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -610,10 +619,11 @@
     }
     .hide{
         overflow: hidden;
-        display:none;
+        opacity: 0;
         /* pointer-events: none; */
         /* opacity: 0; */
-        /* height: 0; */
+        height: 0;
+        width:0;
     }
     
     .header-responsive{
@@ -740,7 +750,26 @@
         padding: 16px;
         border-radius: 4px;
     }
-    .academic-info-element{
+    .flex-box-column{
+        border-radius:4px;
+        background-color:#251F21;
+        padding:24px; 
+        display: flex;
+        flex-direction:row;
+        align-items: start;
+        gap:16px;
+        transition: .15s ease;
+        /* outline: 1px solid var(--border-color); */
+    }
+    .flex-box-column:hover{
+        outline: 2px solid #ffe4ea;
+        translate: 0 -2.4px;
+    }
+    .flex-box-column p{
+        color:#d7b8bf;
+        font-weight: 500;
+    }
+    .flex-box{
         border-radius:4px;
         background-color:#251F21;
         padding:24px; 
@@ -751,11 +780,11 @@
         transition: .15s ease;
         /* outline: 1px solid var(--border-color); */
     }
-    .academic-info-element:hover{
+    .flex-box:hover{
         outline: 2px solid #ffe4ea;
         translate: 0 -2.4px;
     }
-    .academic-info-element p{
+    .flex-box p{
         color:#d7b8bf;
         font-weight: 500;
     }
@@ -921,17 +950,29 @@
     .header-responsive{
         display: none;
     }
-
+    @media all and (max-width:400px){
+        .flex-box-column,.flex-box-column *{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .circlebg{
+            position:absolute;
+            top:100px;
+            translate:-20px 0;
+            width: 250px;
+            height: 250px;
+        }
+    }
     @media all and (max-width:780px){
         body{
             overflow-x: hidden;
         }
-        .circlebg{
+        /* .circlebg{
             position:absolute;
             top:10px;
             translate:0 0;
-            /* translate: 0 -180%; */
-        }
+        } */
         .header-responsive{
            display: flex;
     }
@@ -963,7 +1004,8 @@
 <script>
     const navBtnClose = document.querySelector(".nav-btn-close") 
     const navBtn = document.querySelector(".nav-btn")
-    const sidenav = document.querySelector(".sidenav")
+    const sidenav = document.querySelector("#sidenav")
+    
     // console.log(sidenav)
     const project = document.querySelector(".projects-section")
     const header = document.querySelector(".header")
@@ -971,7 +1013,7 @@
 
     const replaceClass = (element,replace,newClass) => {
         element.classList.replace(replace,newClass)
-        console.log(element)
+
     }
     const checkIfScrolling = () => {
         const bodyScroll = document.body.getBoundingClientRect().top
@@ -986,11 +1028,13 @@
     }
     const destroyListener  = ( ) => {
 
+
         listener.removeEventListener("scroll",checkIfScrolling)    
     }
-
-    const btnNavListener = navBtn.addEventListener("click",()=>replaceClass(sidenav,"hide","sidenav"))
     const btnNavClose = navBtnClose.addEventListener("click",()=>replaceClass(sidenav,"sidenav","hide"))
+    const btnNavListener = navBtn.addEventListener("click",()=>replaceClass(sidenav,"hide","sidenav"))
+    // const btnNavListener1 = navBtn.addEventListener("click",(e)=>console.log(e.target))
+    
     const listener = document.addEventListener("scroll",checkIfScrolling)
 
 
