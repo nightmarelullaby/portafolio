@@ -136,15 +136,15 @@
         <main class="main">
             <!-- <h4 style="color:#f1406a; font-weight:400;font-family:'Oswald';">DESARROLLADOR WEB</h4> -->
             <div style="max-width:650px;">
-            <h1 style="-webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;width: inherit;
-            text-rendering: optimizeLegibility;display:block;line-height:1;color:#f5e4e8;font-weight: 400;font-family: 'Oswald';">Desarrollador web y entusiasta de la tecnología</h1>
+            <h1 class="hero-text" style="-webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;display:block;text-wrap:balance;line-height:1;color:#f5e4e8;font-weight: 400;font-family: 'Oswald';">Desarrollador web y entusiasta de la tecnología</h1>
          
             <img    
                 class="circlebg"
                 src="public/blurCircle.png" 
 />
-            <p  style="font-family:'Roboto';margin-top:16px;font-size:18px;font-weight:400;min-width:250px;color:#8b797f;">¡Hola!, soy <mark style="color:#f1406a;background-color: transparent;">Elián Chauran</mark>, me apasiona el desarrollo enfocado al ámbito web. Durante mi carrera he realizado prácticas laborales en las que he  liderado grupos de desarrollo e implementado soluciones a empresas del sector público.</p>
+            <p  style="font-family:'Roboto';margin-top:16px;line-height:22px;font-weight:400;min-width:200px;color:#8b797f;">¡Hola!, soy <mark style="color:#f1406a;background-color: transparent;">Elián Chauran</mark>, me apasiona el desarrollo enfocado al ámbito web. Durante mi carrera he realizado prácticas laborales en las que he  liderado grupos de desarrollo e implementado soluciones a empresas del sector público.</p>
         </div>
             <button class="btn" style="padding:0;margin-top:24px;align-self:start">
                 <a style="padding:8px 16px;align-items:inherit;display: inherit;gap:inherit;"download href="https://download1588.mediafire.com/g34b48oqg6kgAJ-CU0H3ymPFe3trO-xjm3FSvce1nBmFEwFw88ftdh9HxIheKamaqn4P-6l7gcmC9ihgLO4sMY9LQtHJ0HsqudR6Da_LL1hedFxEWcI-9SPpZiqOcxUu2R2g6mOKS1tield3Nnrfll47lhHwWd_RRcVmWe0MbaA/8q1qp8m1n6nw4dw/cv.pdf" target="_blank">
@@ -953,7 +953,19 @@
     .header-responsive{
         display: none;
     }
-    @media all and (max-width:400px){
+     .hero-text{
+         width: inherit;
+        }
+    @media all and (max-width:440px){
+        .hero-text{
+            width: 200px;
+        }
+            h1{
+                font-size:1.999rem;
+            }
+            p{
+                font-size:14px;
+            }
         .flex-box-column,.flex-box-column *{
             flex-direction: column;
             text-align: center;
