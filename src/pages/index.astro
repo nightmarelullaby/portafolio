@@ -10,7 +10,7 @@ import ExperienceCardList from '../components/ExperienceCardList.astro';
 import ExperienceCardListElement from '../components/ExperienceCardListElement.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Elian Isaid">
 	<main class="main">
 		<div class="bg-lines-wrapper">
 			<div class="bg-lines"></div>
@@ -470,25 +470,27 @@ body="Learn how Astro works and explore the official API docs."
 		gap:4px;
 	}
 	.technology-icon-outline{
-		fill:var(--white-secondary);
-	}
-	.technology-icon-outline:hover{
-		transform:translateY(-1px);
-		fill:var(--pink-secondary)
+		fill:var(--gray-primary);
 	}
 	.technology-icon{
-		stroke:var(--white-secondary);
+		stroke:var(--gray-primary);
 	}
+	.technology-icon:hover{
+		transform:translateY(-2px);
+		stroke:var(--pink-secondary)
+	}
+	.technology-icon-outline:hover{
+		transform:translateY(-2px);
+		fill:var(--pink-secondary)
+	}
+
 	.technology-icon, .technology-icon-outline{
 		stroke-width:1px;
 		width:63px;
 		height: 63px;
 		transition:.15s ease;
 	}
-	.technology-icon:hover{
-		transform:translateY(-1px);
-		stroke:var(--pink-secondary)
-	}
+	
 	.contact-info{
 		margin-top:16px;
 		display:flex;

@@ -4,6 +4,13 @@ const {title,mark,year} = Astro.props
 
 <div class="experience-card-wrapper">
     <div class="experience-card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler-timeline-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 20m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+            <path d="M10 20h-6"></path>
+            <path d="M14 20h6"></path>
+            <path d="M12 15l-2 -2h-3a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-3l-2 2z"></path>
+         </svg>
     <!-- <slot/> -->
   
     </div>
@@ -98,10 +105,21 @@ const {title,mark,year} = Astro.props
         justify-content: stretch;
         gap:8px;
     }
+    .icon-tabler-timeline-event{
+        height:19px;
+        align-self:center;
+        width:19px;
+        stroke-width: 1.8px;
+        stroke:var(--gray-primary);
+        
+    }
 .experience-card-img{
     position:relative;
     background-color: var(--black-primary);
     height:28px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
     width:28px;
     border-radius: 200px;
     outline: 1px solid var(--border-color-soft)
