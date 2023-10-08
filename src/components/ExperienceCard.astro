@@ -54,7 +54,7 @@ const {title,mark,year} = Astro.props
     .title-wrapper{
         justify-content: space-between;
         display: flex;
-        align-items: baseline;
+        align-items: start;
         gap:8px;
     }
     .icon-tabler{
@@ -117,11 +117,21 @@ const {title,mark,year} = Astro.props
     position:relative;
     background-color: var(--black-primary);
     height:28px;
+    width:28px;
     display:flex;
     align-items:center;
     justify-content: center;
-    width:28px;
-    border-radius: 200px;
+    border-radius: 500px;
     outline: 1px solid var(--border-color-soft)
+}
+@media all and (max-width:500px){
+    .experience-card-img{
+        height:28px;
+        width: 34px;
+    }
+    .icon-tabler-timeline-event{
+        height:18px;
+        width:18px;
+    }
 }
 </style>

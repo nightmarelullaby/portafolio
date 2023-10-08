@@ -20,7 +20,7 @@ import ExperienceCardListElement from '../components/ExperienceCardListElement.a
 		</div>
 		<div class="hero-presentation">	
 			<div class="hero-about-me">
-			<div style="display:flex;gap:12px;margin-top:16px;">
+			<div class="hero-upper-info">
 				<div style="display:flex;align-items:center;gap:6px;"> 
 					<svg xmlns="http://www.w3.org/2000/svg" class="aditional-info-dot" width="12" height="12" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -466,7 +466,7 @@ body="Learn how Astro works and explore the official API docs."
 	}
 	.technology-stack{
 		display:grid;
-		grid-template-columns:repeat(8,1fr);
+		grid-template-columns:repeat(auto-fill,minmax(70px,1fr));		
 		gap:4px;
 	}
 	.technology-icon-outline{
@@ -519,10 +519,11 @@ body="Learn how Astro works and explore the official API docs."
 		gap:16px;
 		position:relative;
 	}
-
+	.hero-upper-info{
+		display:flex;gap:12px;margin-top:16px;}
 	.cards{
 		display:grid;
-		grid-template-columns:repeat(3,1fr);
+		grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
 		gap:8px;
 	}
 	.experience-card-thread{
@@ -531,8 +532,8 @@ body="Learn how Astro works and explore the official API docs."
         position: absolute;
         background-color: var(--border-color-soft);
         z-index: -1;
-        left:2%;
-        translate: -2% 0;
+        left:23px;
+        translate: -10px 0;
     }
 	.text-smooth{
 		-webkit-font-smoothing: antialiased;
@@ -580,8 +581,8 @@ body="Learn how Astro works and explore the official API docs."
 		gap:6px;
 	}
 	.section-title-icon{
-		height:18px;
-		width:18px;
+		height:22px;
+		width:22px;
 		stroke-width:1.5px;
 		stroke:var(--pink-secondary);
 	}
@@ -601,7 +602,7 @@ body="Learn how Astro works and explore the official API docs."
 		line-height: 78px;
 		font-family:'Inter';
 		color:#ffe4ea;
-		font-size: 56px;
+		font-size: clamp(2.5rem,2.552vw,4.0rem);
 		font-weight: 600;
 		letter-spacing: -.08em;
 		-webkit-font-smoothing: antialiased;
@@ -627,6 +628,43 @@ body="Learn how Astro works and explore the official API docs."
 		border-radius: 500px;
 		overflow: hidden;
 	}
+	@media all and (max-width:500px){
+		.experience-card-thread{
+			left:23px;
+		}
+		.hero-title{
+			line-height:36px;
+			margin-bottom:16px;
+		}
+		/* .hero-about-me{
+			text-align:center;
+		} */
+		.aditional-info-dot{
+			display:none;
+		}
+		.contact-info .button{
+			justify-content:center;
+		}
+		.hero-upper-info{
+			margin-bottom:16px;
+			overflow-x:scroll;
+		}
+		.hero-upper-info small{
+			font-size:11px;
+			white-space:nowrap;
+
+		}
+		.contact-info{
+			gap:8px;
+			width:100%;
+			align-items:stretch;
+			flex-direction:column;
+		}
+		.main{
+			overflow:hidden;
+			padding:0px 16px 0 16px !important
+		}
+	}
 	.main{
 		flex-direction: column;
 		display: flex;
@@ -635,7 +673,6 @@ body="Learn how Astro works and explore the official API docs."
 		justify-content: center;
 		position: relative;
 		height: 100%;
-		
 		width: 100%;
 		background:radial-gradient( #251217,#000000);
 		z-index: 4;
