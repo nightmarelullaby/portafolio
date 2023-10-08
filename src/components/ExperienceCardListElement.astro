@@ -1,0 +1,26 @@
+
+<li class="experience-card-list-element-wrapper">
+
+    <span class="experience-card-list-text">
+        <slot/>
+    </span>       
+</li>
+
+    <style>
+    .experience-card-list-element-wrapper{
+        display: flex;
+        align-items: center;
+    }
+        .experience-card-list-text{
+    color:var(--gray-primary);
+    display: flex;
+    align-items: center;
+    font-size:12px;
+}
+.experience-card-list-svg-element{
+    /* stroke:var(--gray-primary); */
+    fill:var(--gray-primary);
+    height:18px;
+    widows: 18px;
+}
+    </style>

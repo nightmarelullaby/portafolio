@@ -1,0 +1,26 @@
+---
+const {orientation,...rest} = Astro.props
+---
+<hr class={orientation === "vertical" ? "divider-vertical" : orientation === "horizontal" ? "divider-horizontal":""} style={rest}></hr>
+<style>
+    .divider-vertical{
+        margin:0 32px;
+        widows: .5px;
+        height: 100%;
+        border: none;
+        background-color: #76676a7a;
+    }
+    .divider-horizontal{
+        background-image: linear-gradient(to right, var(--gray-primary) 15%, var(--black-primary) 0%);
+        background-position: bottom;
+        background-size: 5px 1px;
+        background-repeat: repeat-x;
+        margin:32px 0;
+        width:100vw;
+        position: relative;
+        left:-50%;
+        height: 1px;
+        border: none
+        /* background-color: #76676a7a; */
+    }
+</style>

@@ -1,0 +1,51 @@
+---
+import Button from "./Button.astro";
+const { href, title, body,subtitle } = Astro.props;
+---
+ <div class="card">
+ <a href="https://github.com/nightmarelullaby/marketplace-web-app">
+	 <p class="card_title">{title}</p>
+     <small class="card-subtitle">{subtitle}</small>
+ </a>
+<slot/>
+</div>
+<style is:global>
+    
+	.card:hover .card_title{
+        color: #f1406a;
+    }
+    .card:hover{
+        border: 1px solid #8a3949;
+    }
+	.options{
+		display: flex; 
+		gap:16px;
+	}
+    .card-subtitle{
+        color:var(--gray-primary);
+        font-size:13px;
+    }
+	.card_title{
+		font-weight:600;
+        font-size: 14px;
+        color:var(--white-secondary);
+        transition: .15s ease;
+    }
+	.card {
+        flex-grow: 1;
+        cursor: pointer;
+        display: inline-flex;
+        position:relative;
+        flex-direction: column;
+        gap:16px;
+        border:none;
+        overflow: hidden;
+        background-color: var(--black-dominant);
+        border: 1px solid var(--border-color-dominant);
+        padding: 16px;
+        transition:.15s ease;
+        border-radius: 4px;
+	}
+
+
+</style>

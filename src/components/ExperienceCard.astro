@@ -1,0 +1,109 @@
+---
+const {title,mark,year} = Astro.props
+---
+
+<div class="experience-card-wrapper">
+    <div class="experience-card-img">
+    <!-- <slot/> -->
+  
+    </div>
+  
+    <div class="experience-card-content">
+        <div class="title-wrapper">            
+            <div>
+                <h4 class="experience-card-title">{title} </h4>
+                <small class="experience-card-year">{year} </small>    
+                
+            </div>
+            
+            <div class="experience-card-title-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" class="experience-card-title-badge-icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 21l18 0"></path>
+                    <path d="M5 21v-14l8 -4v18"></path>
+                    <path d="M19 21v-10l-6 -4"></path>
+                    <path d="M9 9l0 .01"></path>
+                    <path d="M9 12l0 .01"></path>
+                    <path d="M9 15l0 .01"></path>
+                    <path d="M9 18l0 .01"></path>
+                 </svg>
+                <span>
+                    {mark}
+                </span>
+                </div>
+        </div>
+            
+        <slot/>
+
+    </div>
+</div>
+<style>
+    .experience-card-content{
+        background-color: var(--black-primary);
+        border:1px solid var(--border-color-soft);
+        padding:8px 16px;
+        border-radius: 4px;
+    }
+    .title-wrapper{
+        justify-content: space-between;
+        display: flex;
+        align-items: baseline;
+        gap:8px;
+    }
+    .icon-tabler{
+        width: 14px;
+        height: 14px;
+        stroke:var(--gray-primary);
+        stroke-width: 1.4px;
+    }
+    .experience-card-year-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 4px;
+    }
+    .experience-card-year{
+        color:var(--gray-primary);
+        font-size: 12px;
+    }
+    .experience-card-title-badge-icon{
+        stroke:var(--gray-primary);
+        width:16px;
+        stroke-width:2px;
+        height:16px;
+    }
+    .experience-card-title-badge{
+        display:flex;
+        align-items: center;
+        gap:4px;
+        color:var(--white-primary);
+        font-weight: 500;
+        font-size: 11px;
+        background-color: #312d2f;
+        border:1px solid #675e61;
+        padding:4px;
+        border-radius: 4px;
+        letter-spacing: .9px;
+    }
+    .experience-card-title{
+        line-height: 12px;
+        color:var(--white-primary);
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .experience-card-wrapper{
+        display: flex;
+  
+        align-items: stretch;
+        justify-content: stretch;
+        gap:8px;
+    }
+.experience-card-img{
+    position:relative;
+    background-color: var(--black-primary);
+    height:28px;
+    width:28px;
+    border-radius: 200px;
+    outline: 1px solid var(--border-color-soft)
+}
+</style>
