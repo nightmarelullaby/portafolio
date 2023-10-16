@@ -130,8 +130,9 @@ import Divider from '../components/Divider.astro';
 .experience-card-img{
     position:relative;
     background-color: var(--black-primary);
-    height:28px;
-    width:28px;
+    height:min-content;
+    width:min-content;
+    padding:6px;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -140,8 +141,7 @@ import Divider from '../components/Divider.astro';
 }
 @media all and (max-width:500px){
     .experience-card-img{
-        height:28px;
-        width: 34px;
+        padding:4px;
     }
     .icon-tabler-timeline-event{
         height:18px;
