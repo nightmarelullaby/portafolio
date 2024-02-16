@@ -1,5 +1,5 @@
 ---
-const {title,mark,year} = Astro.props
+const {title,mark,year,companyLink} = Astro.props
 import Divider from '../components/Divider.astro';
 ---
 
@@ -35,9 +35,11 @@ import Divider from '../components/Divider.astro';
                     <path d="M9 15l0 .01"></path>
                     <path d="M9 18l0 .01"></path>
                  </svg>
-                <span>
+                 {companyLink ? <a style="color:var(--white-primary);border:none;padding:0;" href={companyLink} target="'_BLANK'">
                     {mark}
-                </span>
+                </a> : <span>
+                    {mark}
+                </span>}
               
                 </div>
                 
@@ -93,7 +95,7 @@ import Divider from '../components/Divider.astro';
         stroke-width:2px;
         height:16px;
     }
-    .experience-card-title-badge{
+    .experience-card-title-badge, .experience-card-title-badge a{
         display:flex;
         align-items: center;
         gap:4px;
